@@ -68,7 +68,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5 }}
         >
-          Our team consists of expert engineers and data scientists with 15+ years of combined experience.
+          Our team consists of expert engineers and data scientists, each with 15+ years of experience.
         </motion.div>
       </div>
     </section>
