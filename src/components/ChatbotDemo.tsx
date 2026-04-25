@@ -63,7 +63,7 @@ export default function ChatbotDemo() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [isTyping, setIsTyping] = useState(false);
   const [conversationIndex, setConversationIndex] = useState(0);
-  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const messagesContainerRef = useRef<HTMLDivElement>(null);
   const timeoutsRef = useRef<NodeJS.Timeout[]>([]);
 
   const clearTimeouts = useCallback(() => {
@@ -115,7 +115,12 @@ export default function ChatbotDemo() {
   }, [conversationIndex, playConversation, clearTimeouts]);
 
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (messagesContainerRef.current) {
+      messagesContainerRef.current.scrollTo({
+        top: messagesContainerRef.current.scrollHeight,
+        behavior: "smooth"
+      });
+    }
   }, [messages, isTyping]);
 
   return (
@@ -168,7 +173,7 @@ export default function ChatbotDemo() {
               </div>
             </div>
 
-            <div className={styles.chatMessages}>
+            <div className={styles.chatMessages} ref={messagesContainerRef}>
               {messages.map((msg, i) => (
                 <motion.div
                   key={`${conversationIndex}-${i}`}
@@ -193,7 +198,7 @@ export default function ChatbotDemo() {
                 </div>
               )}
 
-              <div ref={messagesEndRef} />
+
             </div>
 
             <div className={styles.chatInput}>

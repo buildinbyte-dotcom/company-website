@@ -126,11 +126,15 @@
 
 .chatMessages {
   padding: 20px;
-  min-height: 340px;
+  height: 340px;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  overflow: hidden;
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+}
+.chatMessages::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
 }
 
 .message {
