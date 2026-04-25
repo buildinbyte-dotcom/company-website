@@ -1,0 +1,247 @@
+.section {
+  padding: var(--section-padding);
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--container-padding);
+}
+
+.textSide {
+  display: flex;
+  flex-direction: column;
+}
+
+.showcaseTitle {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.showcaseDesc {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+}
+
+.feature:hover {
+  background: var(--bg-glass-hover);
+  border-color: var(--border-light);
+}
+
+.featureIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: rgba(139, 92, 246, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.featureInfo {
+  flex: 1;
+}
+
+.featureName {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.featureDesc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Phone Mockup */
+.mockupSide {
+  display: flex;
+  justify-content: center;
+}
+
+.phoneFrame {
+  width: 280px;
+  height: 560px;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-light);
+  border-radius: 36px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: var(--shadow-lg), 0 0 60px rgba(139, 92, 246, 0.1);
+}
+
+.phoneNotch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 28px;
+  background: var(--bg-primary);
+  border-radius: 0 0 16px 16px;
+  z-index: 10;
+}
+
+.phoneScreen {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.appScreen {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.appHeader {
+  padding: 40px 20px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.appLogo {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.appAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.appContent {
+  flex: 1;
+  padding: 0 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow: hidden;
+}
+
+.appCard {
+  padding: 14px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+}
+
+.appCardTitle {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.appCardDesc {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.appCardBar {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--bg-tertiary);
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.appCardBarFill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 1s ease;
+}
+
+.appTabBar {
+  display: flex;
+  border-top: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+}
+
+.appTab {
+  flex: 1;
+  padding: 12px 0 20px;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--text-muted);
+  transition: color var(--transition-fast);
+}
+
+.appTabActive {
+  color: var(--accent-violet);
+}
+
+/* Screen navigation dots */
+.screenDots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.screenDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--bg-tertiary);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  padding: 0;
+}
+
+.screenDotActive {
+  background: var(--accent-violet);
+  width: 24px;
+  border-radius: 4px;
+}
+
+@media (max-width: 968px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .mockupSide {
+    order: -1;
+  }
+}

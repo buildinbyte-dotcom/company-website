@@ -1,0 +1,161 @@
+.section {
+  padding: var(--section-padding);
+  position: relative;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--container-padding);
+  margin-bottom: 64px;
+}
+
+.statCard {
+  padding: 32px 24px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  transition: all var(--transition-base);
+}
+
+.statCard:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-light);
+  box-shadow: var(--shadow-glow);
+}
+
+.statIcon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.statNumber {
+  font-size: 2.2rem;
+  font-weight: 800;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 4px;
+}
+
+.statLabel {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Tech Stack */
+.techSection {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--container-padding);
+}
+
+.techTitle {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 32px;
+}
+
+.techGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.techBadge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: all var(--transition-base);
+}
+
+.techBadge:hover {
+  background: var(--bg-glass-hover);
+  border-color: var(--border-light);
+  color: var(--text-primary);
+  transform: translateY(-2px);
+}
+
+.techBadgeIcon {
+  font-size: 1.1rem;
+}
+
+/* Expertise Row */
+.expertiseRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: var(--container-width);
+  margin: 64px auto 0;
+  padding: var(--container-padding);
+}
+
+.expertiseCard {
+  padding: 32px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
+}
+
+.expertiseCard:hover {
+  background: var(--bg-glass-hover);
+  border-color: var(--border-light);
+}
+
+.expertiseIcon {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.expertiseName {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.expertiseDesc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 968px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .expertiseRow {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+}

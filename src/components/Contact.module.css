@@ -1,0 +1,148 @@
+.section {
+  padding: 100px 0 60px;
+  position: relative;
+}
+
+.content {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--container-padding);
+}
+
+.ctaCard {
+  padding: 80px 60px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ctaCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gradient-hero);
+}
+
+.ctaGlow {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: var(--accent-blue);
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.06;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.ctaTitle {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+  position: relative;
+}
+
+.ctaSubtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 550px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+  position: relative;
+}
+
+.ctaButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.primaryBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 36px;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-full);
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  transition: all var(--transition-base);
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+}
+
+.primaryBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 50px rgba(59, 130, 246, 0.5);
+}
+
+.secondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 36px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-full);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: all var(--transition-base);
+}
+
+.secondaryBtn:hover {
+  background: var(--bg-glass-hover);
+  border-color: var(--accent-blue);
+  transform: translateY(-3px);
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.contactItem:hover {
+  color: var(--text-primary);
+}
+
+.contactIcon {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 640px) {
+  .ctaCard {
+    padding: 48px 24px;
+  }
+
+  .contactInfo {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+}
