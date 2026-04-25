@@ -27,6 +27,7 @@ export default function Navbar() {
       <nav
         className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}
         id="navbar"
+        aria-label="Main navigation"
       >
         <div className={styles.navContent}>
           <a href="#" className={styles.logo}>

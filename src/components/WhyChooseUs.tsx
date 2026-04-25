@@ -45,7 +45,7 @@ const itemVariants = {
 
 export default function WhyChooseUs() {
   return (
-    <section className={styles.section} id="why-us">
+    <section className={styles.section} id="why-us" aria-label="Why choose Build In Byte">
       <div className={`container ${styles.header}`}>
         <motion.span
           className="section-label"

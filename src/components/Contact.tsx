@@ -5,7 +5,7 @@ import styles from "./Contact.module.css";
 
 export default function Contact() {
   return (
-    <section className={styles.section} id="contact">
+    <section className={styles.section} id="contact" aria-label="Contact Build In Byte">
       <div className={styles.content}>
         <motion.div
           className={styles.ctaCard}
@@ -55,12 +55,13 @@ export default function Contact() {
             </a>
           </motion.div>
 
-          <motion.div
+          <motion.address
             className={styles.contactInfo}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
+            style={{ fontStyle: "normal" }}
           >
             <div className={styles.contactItem}>
               <span className={styles.contactIcon}>Email:</span>
@@ -74,7 +75,7 @@ export default function Contact() {
               <span className={styles.contactIcon}>Web:</span>
               buildinbyte.com
             </div>
-          </motion.div>
+          </motion.address>
         </motion.div>
       </div>
     </section>

@@ -52,7 +52,7 @@ const cardVariants = {
 
 export default function ServiceCards() {
   return (
-    <section className={styles.section} id="services">
+    <section className={styles.section} id="services" aria-label="Our core services">
       <div className={`container ${styles.header}`}>
         <motion.span
           className="section-label"

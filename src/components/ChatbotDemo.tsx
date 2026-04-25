@@ -124,7 +124,7 @@ export default function ChatbotDemo() {
   }, [messages, isTyping]);
 
   return (
-    <section className={styles.section} id="chatbots">
+    <section className={styles.section} id="chatbots" aria-label="AI chatbot demonstration">
       <div className={styles.content}>
         <motion.div
           className={styles.textSide}
@@ -172,7 +172,7 @@ export default function ChatbotDemo() {
               </div>
             </div>
 
-            <div className={styles.chatMessages} ref={messagesContainerRef}>
+            <div className={styles.chatMessages} ref={messagesContainerRef} aria-live="polite" aria-label="Chat conversation">
               {messages.map((msg, i) => (
                 <motion.div
                   key={`${conversationIndex}-${i}`}

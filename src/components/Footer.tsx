@@ -2,7 +2,7 @@ import styles from "./Footer.module.css";
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} aria-label="Site footer">
       <div className={styles.footerContent}>
         <div className={styles.footerLogo}>
           <span className={styles.logoIcon}>B</span>
@@ -13,7 +13,7 @@ export default function Footer() {
           © {new Date().getFullYear()} Build In Byte. All rights reserved.
         </div>
 
-        <div className={styles.footerLinks}>
+        <nav className={styles.footerLinks} aria-label="Footer navigation">
           <a href="#services" className={styles.footerLink}>
             Services
           </a>
@@ -26,7 +26,7 @@ export default function Footer() {
           <a href="mailto:hello@buildinbyte.com" className={styles.footerLink}>
             Email
           </a>
-        </div>
+        </nav>
       </div>
     </footer>
   );

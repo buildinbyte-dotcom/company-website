@@ -79,7 +79,7 @@ export default function EnterpriseShowcase() {
   const current = solutions[active];
 
   return (
-    <section className={styles.section} id="enterprise">
+    <section className={styles.section} id="enterprise" aria-label="Enterprise and Gen AI solutions">
       <div className={styles.content}>
         <motion.div
           className={styles.mockupSide}
@@ -213,6 +213,10 @@ export default function EnterpriseShowcase() {
                   i === active ? styles.solutionTabActive : ""
                 }`}
                 onClick={() => setActive(i)}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setActive(i); } }}
+                role="button"
+                tabIndex={0}
+                aria-pressed={i === active}
               >
                 <div className={styles.solutionTabName}>{sol.name}</div>
                 <div className={styles.solutionTabDesc}>{sol.desc}</div>

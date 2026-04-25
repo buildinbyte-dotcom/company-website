@@ -7,7 +7,7 @@ import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
-    <section className={styles.hero} id="hero">
+    <section className={styles.hero} id="hero" aria-label="Hero — Build In Byte digital solutions">
       {/* Background Orbs */}
       <div className={styles.orbContainer}>
         <div className={`${styles.orb} ${styles.orb1}`} />

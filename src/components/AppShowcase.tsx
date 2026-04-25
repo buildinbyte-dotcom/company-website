@@ -117,7 +117,7 @@ export default function AppShowcase() {
   const screen = appScreens[activeScreen];
 
   return (
-    <section className={styles.section} id="apps">
+    <section className={styles.section} id="apps" aria-label="Mobile app development showcase">
       <div className={styles.content}>
         <motion.div
           className={styles.mockupSide}

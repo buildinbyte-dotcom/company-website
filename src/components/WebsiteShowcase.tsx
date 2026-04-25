@@ -64,7 +64,7 @@ export default function WebsiteShowcase() {
   const current = websites[active];
 
   return (
-    <section className={styles.section} id="websites">
+    <section className={styles.section} id="websites" aria-label="Website development showcase">
       <div className={styles.content}>
         <motion.div
           className={styles.textSide}
@@ -91,6 +91,10 @@ export default function WebsiteShowcase() {
                   i === active ? styles.categoryActive : ""
                 }`}
                 onClick={() => setActive(i)}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setActive(i); } }}
+                role="button"
+                tabIndex={0}
+                aria-pressed={i === active}
               >
                 <div className={styles.categoryInfo}>
                   <div className={styles.categoryName}>{site.name}</div>
