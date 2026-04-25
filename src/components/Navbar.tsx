@@ -8,6 +8,7 @@ const navItems = [
   { label: "Websites", href: "#websites" },
   { label: "Apps", href: "#apps" },
   { label: "Chatbots", href: "#chatbots" },
+  { label: "Enterprise", href: "#enterprise" },
   { label: "Why Us", href: "#why-us" },
 ];
 

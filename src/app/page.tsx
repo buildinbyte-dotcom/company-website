@@ -4,6 +4,7 @@ import ServiceCards from "@/components/ServiceCards";
 import WebsiteShowcase from "@/components/WebsiteShowcase";
 import AppShowcase from "@/components/AppShowcase";
 import ChatbotDemo from "@/components/ChatbotDemo";
+import EnterpriseShowcase from "@/components/EnterpriseShowcase";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -18,6 +19,7 @@ export default function Home() {
         <WebsiteShowcase />
         <AppShowcase />
         <ChatbotDemo />
+        <EnterpriseShowcase />
         <WhyChooseUs />
         <Contact />
       </main>

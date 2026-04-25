@@ -17,6 +17,9 @@ export default function Footer() {
           <a href="#services" className={styles.footerLink}>
             Services
           </a>
+          <a href="#enterprise" className={styles.footerLink}>
+            Enterprise
+          </a>
           <a href="#contact" className={styles.footerLink}>
             Contact
           </a>
