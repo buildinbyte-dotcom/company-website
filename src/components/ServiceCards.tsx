@@ -25,6 +25,13 @@ const services = [
     tags: ["Customer Support", "Lead Gen", "E-Commerce", "AI Agents", "LLM"],
     color: "Cyan" as const,
   },
+  {
+    title: "Enterprise Solutions",
+    description:
+      "Custom software, digital transformation, and legacy system modernization tailored to large-scale business operations.",
+    tags: ["Digital Transformation", "Custom Software", "Legacy Migration", "Cloud"],
+    color: "Blue" as const,
+  },
 ];
 
 const containerVariants = {
