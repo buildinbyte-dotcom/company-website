@@ -6,6 +6,38 @@ import styles from "./EnterpriseShowcase.module.css";
 
 const solutions = [
   {
+    name: "Legacy Migration",
+    desc: "Seamless transition from legacy to modern stacks",
+    screenTitle: "Migration Console",
+    screenSubtitle: "Zero-downtime system modernization",
+    modules: [
+      { name: "Data Migration", status: "Complete", progress: 100 },
+      { name: "API Gateway", status: "Active", progress: 82 },
+      { name: "System Testing", status: "Active", progress: 90 },
+    ],
+    metrics: [
+      { label: "Data Integrity", value: "100%" },
+      { label: "Downtime", value: "0 hrs" },
+    ],
+    accentColor: "#14b8a6",
+  },
+  {
+    name: "AI Adoption",
+    desc: "Integrate AI and machine learning into your workflows",
+    screenTitle: "AI Operations Dashboard",
+    screenSubtitle: "Enterprise AI performance at a glance",
+    modules: [
+      { name: "Model Accuracy", status: "Optimal", progress: 97 },
+      { name: "Adoption Rate", status: "Growing", progress: 84 },
+      { name: "Processing Speed", status: "Active", progress: 91 },
+    ],
+    metrics: [
+      { label: "Tasks Automated", value: "12K+" },
+      { label: "Accuracy", value: "97.3%" },
+    ],
+    accentColor: "#0ea5e9",
+  },
+  {
     name: "Digital Transformation",
     desc: "End-to-end modernization of business processes",
     screenTitle: "Transform Hub",
@@ -20,38 +52,6 @@ const solutions = [
       { label: "Cost Reduction", value: "45%" },
     ],
     accentColor: "#2563eb",
-  },
-  {
-    name: "Custom Software",
-    desc: "Bespoke systems built for your operations",
-    screenTitle: "Enterprise Suite",
-    screenSubtitle: "Tailored solutions for complex workflows",
-    modules: [
-      { name: "ERP Integration", status: "Active", progress: 88 },
-      { name: "CRM Platform", status: "Active", progress: 95 },
-      { name: "Analytics Engine", status: "Active", progress: 72 },
-    ],
-    metrics: [
-      { label: "Uptime", value: "99.9%" },
-      { label: "Users Served", value: "10K+" },
-    ],
-    accentColor: "#0ea5e9",
-  },
-  {
-    name: "Legacy Migration",
-    desc: "Seamless transition from legacy to modern stacks",
-    screenTitle: "Migration Console",
-    screenSubtitle: "Zero-downtime system modernization",
-    modules: [
-      { name: "Data Migration", status: "Active", progress: 96 },
-      { name: "API Gateway", status: "Active", progress: 82 },
-      { name: "System Testing", status: "Active", progress: 90 },
-    ],
-    metrics: [
-      { label: "Data Integrity", value: "100%" },
-      { label: "Downtime", value: "0 hrs" },
-    ],
-    accentColor: "#14b8a6",
   },
 ];
 
