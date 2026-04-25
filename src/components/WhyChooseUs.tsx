@@ -4,38 +4,35 @@ import { motion } from "framer-motion";
 import styles from "./WhyChooseUs.module.css";
 
 const stats = [
-  { icon: "🚀", number: "50+", label: "Projects Launched" },
-  { icon: "⭐", number: "99%", label: "Client Satisfaction" },
-  { icon: "⚡", number: "2x", label: "Faster Delivery" },
-  { icon: "🔒", number: "100%", label: "Secure & Reliable" },
+  { number: "50+", label: "Projects Launched" },
+  { number: "99%", label: "Client Satisfaction" },
+  { number: "2x", label: "Faster Delivery" },
+  { number: "100%", label: "Secure & Reliable" },
 ];
 
 const techStack = [
-  { icon: "⚛️", name: "React / Next.js" },
-  { icon: "📱", name: "React Native" },
-  { icon: "🟢", name: "Node.js" },
-  { icon: "🐍", name: "Python" },
-  { icon: "🤖", name: "OpenAI / LLMs" },
-  { icon: "☁️", name: "AWS / GCP" },
-  { icon: "🗄️", name: "PostgreSQL" },
-  { icon: "🔥", name: "Firebase" },
-  { icon: "🎨", name: "Figma" },
-  { icon: "📊", name: "Analytics" },
+  { name: "React / Next.js" },
+  { name: "React Native" },
+  { name: "Node.js" },
+  { name: "Python" },
+  { name: "OpenAI / LLMs" },
+  { name: "AWS / GCP" },
+  { name: "PostgreSQL" },
+  { name: "Firebase" },
+  { name: "Figma" },
+  { name: "Analytics" },
 ];
 
 const expertise = [
   {
-    icon: "🏗️",
     name: "End-to-End Development",
     desc: "From concept and design to deployment and maintenance — we handle the entire development lifecycle.",
   },
   {
-    icon: "🎯",
     name: "Industry-Specific Solutions",
     desc: "Tailored solutions for healthcare, retail, hospitality, and more with domain expertise built in.",
   },
   {
-    icon: "📈",
     name: "Growth-Focused Approach",
     desc: "Every solution is built with scalability and business growth in mind. Your success is our success.",
   },
@@ -98,7 +95,6 @@ export default function WhyChooseUs() {
             className={styles.statCard}
             variants={itemVariants}
           >
-            <div className={styles.statIcon}>{stat.icon}</div>
             <div className={styles.statNumber}>{stat.number}</div>
             <div className={styles.statLabel}>{stat.label}</div>
           </motion.div>
@@ -116,7 +112,6 @@ export default function WhyChooseUs() {
         <div className={styles.techGrid}>
           {techStack.map((tech) => (
             <div key={tech.name} className={styles.techBadge}>
-              <span className={styles.techBadgeIcon}>{tech.icon}</span>
               {tech.name}
             </div>
           ))}
@@ -136,7 +131,6 @@ export default function WhyChooseUs() {
             className={styles.expertiseCard}
             variants={itemVariants}
           >
-            <div className={styles.expertiseIcon}>{item.icon}</div>
             <div className={styles.expertiseName}>{item.name}</div>
             <div className={styles.expertiseDesc}>{item.desc}</div>
           </motion.div>

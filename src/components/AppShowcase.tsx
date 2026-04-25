@@ -7,7 +7,7 @@ import styles from "./AppShowcase.module.css";
 const appScreens = [
   {
     name: "Dashboard",
-    logo: "📊 BizTrack",
+    logo: "BizTrack",
     cards: [
       {
         title: "Revenue This Month",
@@ -28,12 +28,12 @@ const appScreens = [
         barColor: "#f59e0b",
       },
     ],
-    tabs: ["🏠", "📊", "🔔", "👤"],
+    tabs: ["Home", "Stats", "Alerts", "Profile"],
     activeTab: 1,
   },
   {
     name: "Food Ordering",
-    logo: "🍕 QuickBite",
+    logo: "QuickBite",
     cards: [
       {
         title: "Margherita Pizza",
@@ -54,12 +54,12 @@ const appScreens = [
         barColor: "#8b5cf6",
       },
     ],
-    tabs: ["🏠", "🔍", "🛒", "👤"],
+    tabs: ["Home", "Search", "Cart", "Profile"],
     activeTab: 0,
   },
   {
     name: "Fitness",
-    logo: "💪 FitPulse",
+    logo: "FitPulse",
     cards: [
       {
         title: "Steps Today",
@@ -75,34 +75,30 @@ const appScreens = [
       },
       {
         title: "Weekly Streak",
-        desc: "5 days active 🔥",
+        desc: "5 days active",
         barWidth: "71%",
         barColor: "#f43f5e",
       },
     ],
-    tabs: ["🏠", "🏃", "📈", "👤"],
+    tabs: ["Home", "Run", "Stats", "Profile"],
     activeTab: 0,
   },
 ];
 
 const features = [
   {
-    icon: "⚡",
     name: "Cross-Platform",
     desc: "iOS & Android from a single codebase",
   },
   {
-    icon: "🎨",
     name: "Stunning UI/UX",
     desc: "Beautiful, intuitive interfaces users love",
   },
   {
-    icon: "🔒",
     name: "Secure & Scalable",
     desc: "Enterprise-grade security built in",
   },
   {
-    icon: "📡",
     name: "Real-Time Data",
     desc: "Live updates, push notifications, analytics",
   },
@@ -208,7 +204,7 @@ export default function AppShowcase() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <span className="section-label">📱 Apps</span>
+          <span className="section-label">Apps</span>
           <h2 className={styles.showcaseTitle}>
             Apps That Users{" "}
             <span className="gradient-text">Love to Use</span>
@@ -222,7 +218,6 @@ export default function AppShowcase() {
           <div className={styles.features}>
             {features.map((feat) => (
               <div key={feat.name} className={styles.feature}>
-                <div className={styles.featureIcon}>{feat.icon}</div>
                 <div className={styles.featureInfo}>
                   <div className={styles.featureName}>{feat.name}</div>
                   <div className={styles.featureDesc}>{feat.desc}</div>

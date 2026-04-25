@@ -14,49 +14,49 @@ const conversations = [
     { type: "user" as const, text: "Hi! I need help tracking my order #4521" },
     {
       type: "bot" as const,
-      text: "Hello! 👋 I found your order. It's currently out for delivery and should arrive by 3 PM today.",
+      text: "Hello! I found your order. It's currently out for delivery and should arrive by 3 PM today.",
     },
     { type: "user" as const, text: "Can I change the delivery address?" },
     {
       type: "bot" as const,
-      text: "Of course! I can update that for you. Please share the new address and I'll make the change right away. 📦",
+      text: "Of course! I can update that for you. Please share the new address and I'll make the change right away.",
     },
   ],
   [
     { type: "user" as const, text: "What services do you offer?" },
     {
       type: "bot" as const,
-      text: "We offer website development, mobile apps, and AI chatbot solutions! 🚀 What are you interested in?",
+      text: "We offer website development, mobile apps, and AI chatbot solutions! What are you interested in?",
     },
     { type: "user" as const, text: "I need a website for my clinic" },
     {
       type: "bot" as const,
-      text: "Great choice! We've built 15+ healthcare websites with features like online booking, patient portals, and telehealth. Want me to schedule a free consultation? 🏥",
+      text: "Great choice! We've built 15+ healthcare websites with features like online booking, patient portals, and telehealth. Want me to schedule a free consultation?",
     },
   ],
   [
     { type: "user" as const, text: "I want to book a table for tonight" },
     {
       type: "bot" as const,
-      text: "I'd love to help! 🍽️ How many guests will be dining, and do you have a preferred time?",
+      text: "I'd love to help! How many guests will be dining, and do you have a preferred time?",
     },
     { type: "user" as const, text: "4 people, around 7:30 PM" },
     {
       type: "bot" as const,
-      text: "Perfect! I've reserved a table for 4 at 7:30 PM. You'll receive a confirmation email shortly. Enjoy your evening! ✨",
+      text: "Perfect! I've reserved a table for 4 at 7:30 PM. You'll receive a confirmation email shortly. Enjoy your evening!",
     },
   ],
 ];
 
 const capabilities = [
-  { icon: "💬", label: "24/7 Customer Support" },
-  { icon: "🎯", label: "Lead Qualification" },
-  { icon: "📅", label: "Appointment Booking" },
-  { icon: "🛒", label: "Order Tracking" },
-  { icon: "🧠", label: "AI-Powered Responses" },
-  { icon: "🌍", label: "Multi-Language" },
-  { icon: "📊", label: "Analytics Dashboard" },
-  { icon: "🔗", label: "CRM Integration" },
+  { label: "24/7 Customer Support" },
+  { label: "Lead Qualification" },
+  { label: "Appointment Booking" },
+  { label: "Order Tracking" },
+  { label: "AI-Powered Responses" },
+  { label: "Multi-Language" },
+  { label: "Analytics Dashboard" },
+  { label: "CRM Integration" },
 ];
 
 export default function ChatbotDemo() {
@@ -133,7 +133,7 @@ export default function ChatbotDemo() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="section-label">🤖 Chatbots</span>
+          <span className="section-label">Chatbots</span>
           <h2 className={styles.showcaseTitle}>
             AI Chatbots That{" "}
             <span className="gradient-text">Never Sleep</span>
@@ -147,7 +147,6 @@ export default function ChatbotDemo() {
           <div className={styles.capabilities}>
             {capabilities.map((cap) => (
               <div key={cap.label} className={styles.capability}>
-                <span className={styles.capabilityIcon}>{cap.icon}</span>
                 {cap.label}
               </div>
             ))}
@@ -163,7 +162,7 @@ export default function ChatbotDemo() {
         >
           <div className={styles.chatWidget}>
             <div className={styles.chatHeader}>
-              <div className={styles.chatBotAvatar}>🤖</div>
+              <div className={styles.chatBotAvatar}>B</div>
               <div className={styles.chatBotInfo}>
                 <div className={styles.chatBotName}>ByteBot Assistant</div>
                 <div className={styles.chatBotStatus}>

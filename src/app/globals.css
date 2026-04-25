@@ -13,17 +13,17 @@
   --text-secondary: #a0a0b8;
   --text-muted: #6b6b80;
 
-  --accent-blue: #3b82f6;
-  --accent-violet: #8b5cf6;
+  --accent-blue: #2563eb;
+  --accent-sky: #0ea5e9;
   --accent-cyan: #06b6d4;
+  --accent-teal: #14b8a6;
   --accent-emerald: #10b981;
-  --accent-rose: #f43f5e;
   --accent-amber: #f59e0b;
 
-  --gradient-primary: linear-gradient(135deg, #3b82f6, #8b5cf6);
-  --gradient-secondary: linear-gradient(135deg, #06b6d4, #3b82f6);
-  --gradient-accent: linear-gradient(135deg, #8b5cf6, #f43f5e);
-  --gradient-hero: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #06b6d4 100%);
+  --gradient-primary: linear-gradient(135deg, #2563eb, #0ea5e9);
+  --gradient-secondary: linear-gradient(135deg, #0ea5e9, #14b8a6);
+  --gradient-accent: linear-gradient(135deg, #06b6d4, #2563eb);
+  --gradient-hero: linear-gradient(135deg, #2563eb 0%, #0ea5e9 50%, #14b8a6 100%);
 
   --border-subtle: rgba(255, 255, 255, 0.06);
   --border-light: rgba(255, 255, 255, 0.1);

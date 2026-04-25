@@ -48,7 +48,7 @@ export default function Contact() {
               href="mailto:hello@buildinbyte.com"
               className={styles.primaryBtn}
             >
-              ✉️ Send Us an Email
+              Send Us an Email
             </a>
             <a href="#services" className={styles.secondaryBtn}>
               View Our Services
@@ -63,15 +63,15 @@ export default function Contact() {
             transition={{ delay: 0.4 }}
           >
             <div className={styles.contactItem}>
-              <span className={styles.contactIcon}>📧</span>
+              <span className={styles.contactIcon}>Email:</span>
               hello@buildinbyte.com
             </div>
             <div className={styles.contactItem}>
-              <span className={styles.contactIcon}>📍</span>
+              <span className={styles.contactIcon}>Location:</span>
               Australia
             </div>
             <div className={styles.contactItem}>
-              <span className={styles.contactIcon}>🌐</span>
+              <span className={styles.contactIcon}>Web:</span>
               buildinbyte.com
             </div>
           </motion.div>

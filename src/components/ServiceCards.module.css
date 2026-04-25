@@ -49,7 +49,7 @@
 }
 
 .glowBlue { background: var(--gradient-secondary); }
-.glowViolet { background: var(--gradient-accent); }
+.glowSky { background: var(--gradient-accent); }
 .glowCyan { background: linear-gradient(135deg, var(--accent-cyan), var(--accent-emerald)); }
 
 .iconWrap {
@@ -65,7 +65,7 @@
 }
 
 .iconBlue { background: rgba(59, 130, 246, 0.12); color: var(--accent-blue); }
-.iconViolet { background: rgba(139, 92, 246, 0.12); color: var(--accent-violet); }
+.iconSky { background: rgba(14, 165, 233, 0.12); color: var(--accent-sky); }
 .iconCyan { background: rgba(6, 182, 212, 0.12); color: var(--accent-cyan); }
 
 .cardTitle {

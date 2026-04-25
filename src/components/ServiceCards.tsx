@@ -5,7 +5,6 @@ import styles from "./ServiceCards.module.css";
 
 const services = [
   {
-    icon: "🌐",
     title: "Website Development",
     description:
       "Pixel-perfect, responsive websites that convert visitors into customers. From landing pages to full-scale web platforms.",
@@ -13,15 +12,13 @@ const services = [
     color: "Blue" as const,
   },
   {
-    icon: "📱",
     title: "App Development",
     description:
       "Native and cross-platform mobile applications built for performance, scalability, and exceptional user experience.",
     tags: ["iOS", "Android", "React Native", "Flutter", "Cross-Platform"],
-    color: "Violet" as const,
+    color: "Sky" as const,
   },
   {
-    icon: "🤖",
     title: "AI Chatbots",
     description:
       "Intelligent conversational agents powered by cutting-edge AI. Automate support, generate leads, and delight customers 24/7.",
@@ -98,13 +95,6 @@ export default function ServiceCards() {
                 styles[`glow${service.color}`]
               }`}
             />
-            <div
-              className={`${styles.iconWrap} ${
-                styles[`icon${service.color}`]
-              }`}
-            >
-              {service.icon}
-            </div>
             <h3 className={styles.cardTitle}>{service.title}</h3>
             <p className={styles.cardDesc}>{service.description}</p>
             <div className={styles.tags}>

@@ -6,7 +6,6 @@ import styles from "./WebsiteShowcase.module.css";
 
 const websites = [
   {
-    icon: "🏥",
     name: "Healthcare & Clinics",
     desc: "Doctor portals, booking systems, telehealth",
     url: "www.healthclinic.com.au",
@@ -18,7 +17,6 @@ const websites = [
     navItems: ["Home", "Services", "Doctors", "Book"],
   },
   {
-    icon: "🛒",
     name: "E-Commerce & Retail",
     desc: "Online stores, product catalogs, POS",
     url: "www.modernshop.com",
@@ -30,7 +28,6 @@ const websites = [
     navItems: ["Home", "Shop", "Cart", "Account"],
   },
   {
-    icon: "🍽️",
     name: "Restaurants & Hospitality",
     desc: "Menus, reservations, delivery integration",
     url: "www.finedine.com.au",
@@ -42,7 +39,6 @@ const websites = [
     navItems: ["Home", "Menu", "Reserve", "Order"],
   },
   {
-    icon: "🏢",
     name: "Corporate & SaaS",
     desc: "Business sites, landing pages, dashboards",
     url: "www.techcorp.io",
@@ -77,7 +73,7 @@ export default function WebsiteShowcase() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="section-label">🌐 Websites</span>
+          <span className="section-label">Websites</span>
           <h2 className={styles.showcaseTitle}>
             Websites That{" "}
             <span className="gradient-text">Convert & Impress</span>
@@ -96,7 +92,6 @@ export default function WebsiteShowcase() {
                 }`}
                 onClick={() => setActive(i)}
               >
-                <div className={styles.categoryIcon}>{site.icon}</div>
                 <div className={styles.categoryInfo}>
                   <div className={styles.categoryName}>{site.name}</div>
                   <div className={styles.categoryDesc}>{site.desc}</div>
@@ -139,7 +134,6 @@ export default function WebsiteShowcase() {
                     className={styles.screenHero}
                     style={{ background: current.bgGradient }}
                   >
-                    <span className={styles.screenIcon}>{current.icon}</span>
                     <div className={styles.screenTitle}>
                       {current.screenTitle}
                     </div>
