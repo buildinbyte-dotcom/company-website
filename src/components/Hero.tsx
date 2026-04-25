@@ -3,12 +3,7 @@
 import { motion } from "framer-motion";
 import styles from "./Hero.module.css";
 
-const stats = [
-  { number: "50+", label: "Projects Delivered" },
-  { number: "30+", label: "Happy Clients" },
-  { number: "3+", label: "Years Experience" },
-  { number: "99%", label: "Client Satisfaction" },
-];
+
 
 export default function Hero() {
   return (
@@ -68,17 +63,12 @@ export default function Hero() {
         </motion.div>
 
         <motion.div
-          className={styles.statsBar}
+          className={styles.heroTeamText}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5 }}
         >
-          {stats.map((stat) => (
-            <div key={stat.label} className={styles.stat}>
-              <div className={styles.statNumber}>{stat.number}</div>
-              <div className={styles.statLabel}>{stat.label}</div>
-            </div>
-          ))}
+          Our team consists of expert engineers and data scientists with 15+ years of combined experience.
         </motion.div>
       </div>
     </section>

@@ -153,42 +153,13 @@
   animation: float 12s ease-in-out infinite 4s;
 }
 
-/* Stats Bar */
-.statsBar {
-  display: flex;
-  gap: 48px;
+/* Team Text */
+.heroTeamText {
   margin-top: 80px;
   padding-top: 40px;
   border-top: 1px solid var(--border-subtle);
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.stat {
-  text-align: center;
-}
-
-.statNumber {
-  font-size: 2rem;
-  font-weight: 800;
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.statLabel {
-  font-size: 0.85rem;
+  font-size: 1.15rem;
   color: var(--text-muted);
-  margin-top: 4px;
-}
-
-@media (max-width: 768px) {
-  .statsBar {
-    gap: 24px;
-  }
-
-  .stat {
-    flex: 1 1 120px;
-  }
+  max-width: 600px;
+  line-height: 1.6;
 }

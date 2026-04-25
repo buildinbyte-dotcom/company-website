@@ -3,12 +3,7 @@
 import { motion } from "framer-motion";
 import styles from "./WhyChooseUs.module.css";
 
-const stats = [
-  { number: "50+", label: "Projects Launched" },
-  { number: "99%", label: "Client Satisfaction" },
-  { number: "2x", label: "Faster Delivery" },
-  { number: "100%", label: "Secure & Reliable" },
-];
+
 
 const techStack = [
   { name: "React / Next.js" },
@@ -82,24 +77,7 @@ export default function WhyChooseUs() {
         </motion.p>
       </div>
 
-      <motion.div
-        className={styles.grid}
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-80px" }}
-      >
-        {stats.map((stat) => (
-          <motion.div
-            key={stat.label}
-            className={styles.statCard}
-            variants={itemVariants}
-          >
-            <div className={styles.statNumber}>{stat.number}</div>
-            <div className={styles.statLabel}>{stat.label}</div>
-          </motion.div>
-        ))}
-      </motion.div>
+
 
       <motion.div
         className={styles.techSection}
