@@ -22,18 +22,18 @@ const solutions = [
     accentColor: "#14b8a6",
   },
   {
-    name: "AI Adoption",
-    desc: "Integrate AI and machine learning into your workflows",
-    screenTitle: "AI Operations Dashboard",
-    screenSubtitle: "Enterprise AI performance at a glance",
+    name: "Gen AI Adoption",
+    desc: "Accelerate your business with generative AI integration",
+    screenTitle: "Gen AI Operations",
+    screenSubtitle: "Enterprise Gen AI performance at a glance",
     modules: [
-      { name: "Model Accuracy", status: "Optimal", progress: 97 },
-      { name: "Adoption Rate", status: "Growing", progress: 84 },
-      { name: "Processing Speed", status: "Active", progress: 91 },
+      { name: "LLM Integration", status: "Deployed", progress: 95 },
+      { name: "RAG Pipeline", status: "Optimal", progress: 92 },
+      { name: "Agent Workflows", status: "Active", progress: 87 },
     ],
     metrics: [
       { label: "Tasks Automated", value: "12K+" },
-      { label: "Accuracy", value: "97.3%" },
+      { label: "Model Accuracy", value: "97.3%" },
     ],
     accentColor: "#0ea5e9",
   },
@@ -56,14 +56,14 @@ const solutions = [
 ];
 
 const capabilities = [
+  { label: "Gen AI Strategy" },
+  { label: "LLM Fine-Tuning" },
+  { label: "RAG Pipelines" },
+  { label: "AI Agents" },
   { label: "Cloud Architecture" },
   { label: "System Integration" },
   { label: "DevOps & CI/CD" },
-  { label: "Database Design" },
   { label: "Security & Compliance" },
-  { label: "Performance Optimization" },
-  { label: "API Development" },
-  { label: "Monitoring & Observability" },
 ];
 
 export default function EnterpriseShowcase() {
@@ -196,13 +196,13 @@ export default function EnterpriseShowcase() {
         >
           <span className="section-label">Enterprise</span>
           <h2 className={styles.showcaseTitle}>
-            Enterprise Solutions That{" "}
-            <span className="gradient-text">Scale</span>
+            Enterprise &{" "}
+            <span className="gradient-text">Gen AI Solutions</span>
           </h2>
           <p className={styles.showcaseDesc}>
-            We architect and build robust, scalable enterprise systems — from
-            digital transformation and custom platforms to legacy migration and
-            cloud infrastructure.
+            We help businesses adopt generative AI and modernize their
+            infrastructure — from LLM integration and AI agent workflows to
+            legacy migration and digital transformation.
           </p>
 
           <div className={styles.solutionTabs}>
