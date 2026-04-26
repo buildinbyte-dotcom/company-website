@@ -100,7 +100,7 @@ const jsonLd = {
       "@id": `${SITE_URL}/#organization`,
       name: "Build In Byte",
       url: SITE_URL,
-      email: "hello@buildinbyte.com",
+      email: "sales@buildinbyte.com",
       description:
         "Australian digital agency specializing in custom websites, mobile apps, AI chatbots, and enterprise solutions.",
       foundingDate: "2020",

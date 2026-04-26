@@ -45,7 +45,7 @@ export default function Contact() {
             transition={{ delay: 0.3 }}
           >
             <a
-              href="mailto:hello@buildinbyte.com"
+              href="mailto:sales@buildinbyte.com"
               className={styles.primaryBtn}
             >
               Send Us an Email
@@ -65,7 +65,7 @@ export default function Contact() {
           >
             <div className={styles.contactItem}>
               <span className={styles.contactIcon}>Email:</span>
-              hello@buildinbyte.com
+              sales@buildinbyte.com
             </div>
             <div className={styles.contactItem}>
               <span className={styles.contactIcon}>Location:</span>

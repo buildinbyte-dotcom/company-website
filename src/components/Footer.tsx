@@ -23,7 +23,7 @@ export default function Footer() {
           <a href="#contact" className={styles.footerLink}>
             Contact
           </a>
-          <a href="mailto:hello@buildinbyte.com" className={styles.footerLink}>
+          <a href="mailto:sales@buildinbyte.com" className={styles.footerLink}>
             Email
           </a>
         </nav>
