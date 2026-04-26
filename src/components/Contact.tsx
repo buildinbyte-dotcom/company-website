@@ -65,7 +65,7 @@ export default function Contact() {
           >
             <div className={styles.contactItem}>
               <span className={styles.contactIcon}>Email:</span>
-              sales@buildinbyte.com
+              <a href="mailto:sales@buildinbyte.com" style={{ color: 'inherit', textDecoration: 'none' }}>sales@buildinbyte.com</a>
             </div>
             <div className={styles.contactItem}>
               <span className={styles.contactIcon}>Location:</span>
@@ -73,7 +73,7 @@ export default function Contact() {
             </div>
             <div className={styles.contactItem}>
               <span className={styles.contactIcon}>Web:</span>
-              buildinbyte.com
+              <a href="https://buildinbyte.com" style={{ color: 'inherit', textDecoration: 'none' }}>buildinbyte.com</a>
             </div>
           </motion.address>
         </motion.div>
